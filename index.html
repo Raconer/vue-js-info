@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Sample</title>
+  </head>
+  <body>
+    <div id="app">
+      {{message}}
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+      <script>
+        // 인스턴스
+        new Vue({
+          el: "#app", // el 속성
+          data: {
+            // 데이터 속성
+            message: "Hello Vue.js!",
+            // template : 화면에 표시할 HTML, CSS등의 마크업 요소를 정의하는 속성, 뷰의 데이터 및 기타 속성 들도 함께 화면에 그릴수 있으며 05장 뷰 템플리셍서 자세히 설명합니다.
+            // methods : 화면 로직 제어와 관계된 메서드를 정의하는 속성, 마우스 클릭 이벤트 처리와 같이 화면의 전반적인 이벤트와 화면 동작과 관련된 로직을 추가할 수있습니다.
+            // created : 뷰 인스턴스가 생성되자마자 실행할 로직을 정의 할 수 있는 속성, 뷰 인스턴스 라이프 사이클 부분에서 추가로 설명합니다.
+          },
+        });
+      </script>
+    </div>
+  </body>
+</html>
